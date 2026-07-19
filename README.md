@@ -1,4 +1,3 @@
-# careerlens-document-intelligence
 # CareerLens — Multimodal Student Document Intelligence Platform
 
 CareerLens is a document understanding system that classifies, extracts, and enables natural-language Q&A over three student-relevant document types — **resumes, transcripts/marksheets, and certificates** — by benchmarking OCR-free and OCR-dependent vision-language models and analyzing where each one fails.
