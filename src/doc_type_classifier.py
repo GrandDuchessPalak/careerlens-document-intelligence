@@ -34,7 +34,7 @@ from PIL import Image
 from pydantic import BaseModel, Field, ValidationError
 
 from config import get_settings
-from schemas import DocumentType
+from src.schemas import DocumentType
 
 logger = logging.getLogger(__name__)
 

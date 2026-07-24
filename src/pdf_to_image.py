@@ -110,7 +110,7 @@ def _normalize_image(image: Image.Image) -> Image.Image:
     if longer_side > MAX_IMAGE_SIDE:
         scale = MAX_IMAGE_SIDE / longer_side
         new_size = (int(image.width * scale), int(image.height * scale))
+        old_size = image.size
         image = image.resize(new_size, Image.LANCZOS)
-        logger.debug("Downscaled image from %s to %s", image.size, new_size)
-
+        logger.debug("Downscaled image from %s to %s", old_size, new_size)
     return image

@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 .env
+
+.hf_cache/
+storage/
+.pytest_cache/
