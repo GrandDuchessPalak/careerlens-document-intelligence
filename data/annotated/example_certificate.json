@@ -1,0 +1,11 @@
+{
+  "_example": true,
+  "image": "data/raw/cert_01.png",
+  "document_type": "certificate",
+  "tags": ["stamps", "low_res"],
+  "fields": {
+    "issuer": "Example Institute of Technology",
+    "issue_date": "12 March 2026",
+    "recipient_name": "Jane Doe"
+  }
+}
