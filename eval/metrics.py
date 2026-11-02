@@ -154,4 +154,4 @@ def summarize(results: List[DocMetrics], model_name: str) -> BenchmarkSummary:
 
 def _normalize(value) -> str:
     return str(value).strip().lower() if value is not None else ""
->>>>>>> 22298f89189fd0a2a37213efc84616474a0cc990
+>>>>>>> "22298f89189fd0a2a37213efc84616474a0cc990"
