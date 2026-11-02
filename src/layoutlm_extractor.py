@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 """OCR-dependent baseline: OCR (Tesseract) -> words + boxes -> LayoutLM-family document QA.
 
 Two-stage by design: the HF `document-question-answering` pipeline runs Tesseract internally, so
@@ -193,4 +193,4 @@ def _default_layoutlm_predict(image: Image.Image, words: List[str], boxes: List[
     predictions = outputs.logits.argmax(-1).squeeze().tolist()
     predictions = predictions if isinstance(predictions, list) else [predictions]
     return [LAYOUTLM_LABELS[p % len(LAYOUTLM_LABELS)] for p in predictions[: len(words)]]
->>>>>>> 22298f89189fd0a2a37213efc84616474a0cc990
+
