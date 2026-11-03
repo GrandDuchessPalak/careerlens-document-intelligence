@@ -1,4 +1,3 @@
-
 """Field-level evaluation: accuracy, exact match, precision/recall/F1, list F1 for arrays."""
 import re
 from collections import defaultdict
@@ -93,4 +92,3 @@ def aggregate(doc_scores: List[Dict]) -> Dict:
         "field_accuracy": {f: v["correct"] / v["n"] for f, v in per_field.items()},
         "list_f1": {k: sum(v) / len(v) for k, v in list_f1.items()},
     }
-]
