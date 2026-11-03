@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 """
 pdf_to_image.py
 
