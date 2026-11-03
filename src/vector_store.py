@@ -1,4 +1,3 @@
-
 """ChromaDB persistent vector store. Chunks come from the extracted JSON (one line per field/entry)
 plus raw OCR text."""
 import re
