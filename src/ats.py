@@ -1,4 +1,3 @@
-
 """V2 (optional): explainable, rule-based ATS check on an extracted resume. Heuristics follow common
 ATS guidance (contact info, skills keywords, quantified achievements, action verbs); always returns reasons.
 JD matching, career recommendations and interview questions are not implemented in v1."""

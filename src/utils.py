@@ -1,4 +1,3 @@
-
 import base64, io, json, logging, re
 
 import config
@@ -92,4 +91,3 @@ def llm_complete(prompt: str, system: str = "", images=None, max_tokens: int = 2
     msg = client.messages.create(model=config.VLM_MODEL, max_tokens=max_tokens, system=system,
                                  messages=[{"role": "user", "content": content}])
     return "".join(b.text for b in msg.content if b.type == "text")
-

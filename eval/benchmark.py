@@ -1,4 +1,3 @@
-
 """Benchmark Donut vs LayoutLM vs prompted VLM on the hand-annotated set, with error analysis.
 
 Usage (from project root):

@@ -1,11 +1,13 @@
 """Minimal Streamlit UI. Start the API first: uvicorn src.api:app --reload
 Then: streamlit run frontend/app.py"""
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
 import requests
 import streamlit as st
 
-import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import config
 
 API = st.sidebar.text_input("API URL", "http://127.0.0.1:8000")

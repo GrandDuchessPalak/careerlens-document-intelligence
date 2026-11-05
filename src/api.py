@@ -1,4 +1,3 @@
-
 """All routes (contract frozen in the design spec). Run: uvicorn src.api:app --reload"""
 from pathlib import Path
 from typing import Optional

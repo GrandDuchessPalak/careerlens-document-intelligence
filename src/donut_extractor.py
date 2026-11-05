@@ -1,4 +1,3 @@
-
 """Donut (OCR-free) baseline. The DocVQA checkpoint is queried once per scalar field using the
 questions in schemas.FIELD_QUESTIONS. Confidence = mean token probability of the generated answer."""
 import re

@@ -1,4 +1,3 @@
-
 """Zero-shot document-type classifier (CLIP) for the 3 v1 classes.
 
 Kept deliberately simple. Upgrade path: fine-tune on RVL-CDIP's resume class + a few of your own
@@ -38,4 +37,3 @@ def classify(image) -> Tuple[str, float]:
         probs = model(**inputs).logits_per_image.softmax(dim=-1)[0]
     i = int(probs.argmax())
     return labels[i], float(probs[i])
-

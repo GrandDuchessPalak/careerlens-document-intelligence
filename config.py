@@ -27,9 +27,10 @@ EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "all-MiniLM-L6-v2")
 # ---- LLM / VLM ----------------------------------------------------------------
 LLM_PROVIDER = os.getenv("LLM_PROVIDER", "groq")           # groq (free) | anthropic (paid)
 VLM_MODEL = os.getenv("VLM_MODEL", "claude-sonnet-5-5")
-# Groq rotates models: check https://console.groq.com/docs/models and override in .env if retired.
 GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")              # text (RAG)
-GROQ_VISION_MODEL = os.getenv("GROQ_VISION_MODEL", "qwen/qwen3.8-27b")   # vision (extraction)
+# Vision model for extraction. Groq rotates models: check https://console.groq.com/docs/models for a
+# current vision-capable ID and override here if this one has been retired.
+GROQ_VISION_MODEL = os.getenv("GROQ_VISION_MODEL", "qwen/qwen3.8-27b")
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 

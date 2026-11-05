@@ -1,4 +1,3 @@
-
 """File-based storage: document (original) -> metadata -> json (extracted). Embeddings live in ChromaDB."""
 import json
 from pathlib import Path

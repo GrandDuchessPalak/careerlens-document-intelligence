@@ -1,4 +1,3 @@
-
 """RAG Q&A over extracted JSON + OCR text. Swap `llm_complete` for your LangChain chain if preferred;
 the retrieval layer (vector_store.py) is independent of it."""
 from typing import List, Optional

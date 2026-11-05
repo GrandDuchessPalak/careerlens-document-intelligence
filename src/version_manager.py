@@ -1,4 +1,3 @@
-
 """Versioning: every upload of the same doc_id creates the next version; nothing is overwritten."""
 from typing import Optional
 
@@ -23,4 +22,3 @@ class VersionManager:
         if version not in versions:
             raise FileNotFoundError(f"{doc_id} has no version {version}")
         return version
-
